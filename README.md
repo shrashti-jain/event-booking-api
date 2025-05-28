@@ -2,7 +2,6 @@
 
 A simple RESTful API built with Node.js, Express, and PostgreSQL for managing events and bookings. Users can register, log in, browse events, and book available seats. Admin users can create and manage events.
 
----
 
 ## 🔧 Tech Stack
 
@@ -27,11 +26,6 @@ event-booking-api/
 ├── server.js
 └── README.md
 
-yaml
-Copy
-Edit
-
----
 
 ## 🚀 Getting Started
 
@@ -41,25 +35,17 @@ Edit
 git clone https://github.com/shrashti-jain/event-booking-api.git
 cd event-booking-api
 2. Install dependencies
-bash
-Copy
-Edit
 npm install
+
 3. Configure environment variables
 Create a .env file in the root folder:
-
-ini
-Copy
-Edit
 PORT=3000
 DATABASE_URL=postgres://<username>:<password>@localhost:5432/eventdb
 JWT_SECRET=your_secret_key
 Replace <username> and <password> with your actual PostgreSQL credentials.
 
 4. Start the server
-bash
-Copy
-Edit
+
 npm run dev
 🔐 Authentication
 Users can register and log in.
@@ -86,16 +72,8 @@ POST	/api/bookings/:eventId	Book a seat in an event
 🧪 Sample Request with Token
 Make sure to include the token in your request header like this:
 
-http
-Copy
-Edit
 Authorization: Bearer <your_token>
 🧑‍💻 Admin Access
 To create an admin, you can manually insert a user in your DB with the role set to "admin" or modify the registration controller for development purposes.
 
-📃 License
-This project is open-source and available under the MIT License.
 
-yaml
-Copy
-Edit
